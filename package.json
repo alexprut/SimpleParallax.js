@@ -1,0 +1,32 @@
+{
+  "name": "SimpleParallax.js",
+  "version": "0.1.0",
+  "description": "A Simple and light Parallax library",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexprut/SimpleParallax.js.git"
+  },
+  "keywords": [
+    "parallax"
+  ],
+  "author": "Alex Prut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexprut/SimpleParallax.js/issues"
+  },
+  "homepage": "https://github.com/alexprut/SimpleParallax.js"
+}
