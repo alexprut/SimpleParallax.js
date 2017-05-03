@@ -1,8 +1,8 @@
-.parallax-group {
+.parallax {
   position: relative;
   width: 100%;
 }
-.parallax-group .parallax-item {
+.parallax__item {
   position: absolute;
   width: 100%;
   top: 0;

@@ -19,14 +19,14 @@ Live demo: [http://alexprut.github.io/SimpleParallax.js](http://alexprut.github.
 <link rel="stylesheet" href="css/simpleParallax.min.css">
 <script src="js/simpleParallax.min.js"></script>
 
-<div class="parallax-group"
+<div class="parallax"
     data-parallax-axis="both"
     data-parallax-scope="global"
     data-parallax-detect="mouseover">
-    <div class="parallax-item" data-parallax-depth="35">
+    <div class="parallax__item" data-parallax-depth="35">
         example
     </div>
-    <div class="parallax-item" data-parallax-depth="10">
+    <div class="parallax__item" data-parallax-depth="10">
         example
     </div>
 </div>

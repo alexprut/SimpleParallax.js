@@ -1,25 +1,19 @@
 $(function () {
   'use strict'
 
-  var $parallaxGroups = $('.parallax-group')
+  var $parallaxGroups = $('.parallax')
   var _innerWidth = window.innerWidth / 2
-  var  _innerHeight = window.innerHeight / 2
+  var _innerHeight = window.innerHeight / 2
   var _xMousePos = 0
   var _yMousePos = 0
   var _yScollLastPos = 0
-
-  console.log($parallaxGroups);
-  console.log($parallaxGroups.html());
-
 
   function clamp (number, max) {
     return Math.min(Math.max(number, -max), max)
   }
 
   function _bindParallaxGroups () {
-    console.log("binded");
     $parallaxGroups.each(function (index, parallaxGroup) {
-      console.log("binding");
       var $parallaxGroup = $(parallaxGroup)
       var settings = {
         axis: $parallaxGroup.data('parallax-axis') || 'both',
@@ -34,8 +28,7 @@ $(function () {
 
   function _paint ($parallaxGroup, settings) {
     window.requestAnimationFrame(function () {
-      console.log("paint");
-      $parallaxGroup.find('.parallax-item').each(function (index, parallaxItem) {
+      $parallaxGroup.find('.parallax__item').each(function (index, parallaxItem) {
         var $parallaxItem = $(parallaxItem)
         var depth = $parallaxItem.data('parallax-depth') || 1
 
@@ -65,7 +58,6 @@ $(function () {
   }
 
   function _bindParallaxItems ($parallaxGroup, settings) {
-    console.log(settings);
     if (settings.scope === 'global') {
       $(window).on('mousemove.parallax', function (event) {
         updateMousePos(event)
@@ -82,12 +74,10 @@ $(function () {
   }
 
   function _init () {
-    console.log("init2");
     _bindParallaxGroups()
   }
 
   $(function () {
-    console.log("init");
     _init()
   })
 })
