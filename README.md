@@ -8,7 +8,7 @@ Live demo: [http://alexprut.github.io/SimpleParallax.js](http://alexprut.github.
 
 ##  Installation
 * __Bower__:  
-    Run from your console/terminal ```bower install simpleparallax.js --save-dev```
+    Run from your console/terminal ```bower install simpleparallax.js --save```
 * __From Source__:  
     Run ```git clone https://github.com/alexprut/SimpleParallax.js.git```
 * __Direct download__:  
@@ -17,6 +17,7 @@ Live demo: [http://alexprut.github.io/SimpleParallax.js](http://alexprut.github.
 ## Usage
 ```html
 <link rel="stylesheet" href="css/simpleParallax.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/simpleParallax.min.js"></script>
 
 <div class="parallax"
