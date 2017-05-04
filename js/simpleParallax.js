@@ -19,7 +19,7 @@ $(function () {
         axis: $parallaxGroup.data('parallax-axis') || 'both',
         scope: $parallaxGroup.data('parallax-scope') || 'global',
         detect: $parallaxGroup.data('parallax-detect') || 'mousemove',
-        maxShift: $parallaxGroup.data('parallax-max-shift') || 100
+        maxShift: $parallaxGroup.data('parallax-max-shift') || 1000
       }
 
       _bindParallaxItems($parallaxGroups, settings)
@@ -31,12 +31,14 @@ $(function () {
       $parallaxGroup.find('.parallax__item').each(function (index, parallaxItem) {
         var $parallaxItem = $(parallaxItem)
         var depth = $parallaxItem.data('parallax-depth') || 1
+        var offsetX = $parallaxItem.data('parallax-offset-x') || 0
+        var offsetY = $parallaxItem.data('parallax-offset-y') || 0
 
         var shiftX = -(_xMousePos - _innerWidth) / depth
         var shiftY = -(_yMousePos - _innerHeight) / depth
 
-        shiftX = Math.round(clamp(shiftX, settings.maxShift) * 100) / 100
-        shiftY = Math.round(clamp(shiftY, settings.maxShift) * 100) / 100
+        shiftX = (Math.round(clamp(shiftX, settings.maxShift) * 100) / 100) + offsetX
+        shiftY = (Math.round(clamp(shiftY, settings.maxShift) * 100) / 100) + offsetY
 
         $parallaxItem.css({
           'top': shiftY,

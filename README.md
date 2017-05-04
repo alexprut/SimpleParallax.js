@@ -37,7 +37,13 @@ For a complete example see [index.html](https://github.com/alexprut/SimpleParall
 #### Parameters
 |Data Attribute|Type|Description|Default|
 |----|----|-----------|-------|
-|```data-parallax-scope```|```global```||```global```|
+|```data-parallax-scope```|```['global']```|the scope/region covered by the parallax effect|```'global'```|
+|```data-parallax-axis```|```['both']```|the direction affected by the parallax effect|```'both'```|
+|```data-parallax-detect```|```['mouseover']```|the event that triggers the effect|```'mouseover'```|
+|```data-parallax-max-shift```|```int```|maximum shift in both directions of the elements|```1000```|
+|```parallax-depth```|```int```|the depth of a item|```1```|
+|```parallax-offset-x```|```int```|the offset of a item in pixels along the x axis|```0```|
+|```parallax-offset-y```|```int```|the offset of a item in pixels along the y axis|```0```|
 
 ## License
 SimpleParallax.js is licensed under the MIT License – see the LICENSE file for details.
