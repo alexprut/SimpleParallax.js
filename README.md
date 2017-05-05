@@ -6,6 +6,8 @@ SimpleParallax.js
 
 Live demo: [http://alexprut.github.io/SimpleParallax.js](http://alexprut.github.io/SimpleParallax.js)
 
+![SimpleParallax.js](https://github.com/alexprut/SimpleParallax.js/raw/master/img/simpleparallax.gif)
+
 ##  Installation
 * __Bower__:  
     Run from your console/terminal ```bower install simpleparallax.js --save```
